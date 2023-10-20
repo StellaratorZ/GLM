@@ -1,0 +1,207 @@
+[
+  {
+    "text": "40岁是女人卵巢功能开始衰退的时间段,如果月经量开始慢慢减少有可能是卵巢功能衰退,但是不能除外是40岁之前做人工流产,或者宫腔操作后导致内膜变薄、粘连造成月经量少。此时要到医院检查女性激素,如果女性激素非常好说明还没有到围绝经状态,月经量少有可能是宫腔粘连造成的。这时要做b超检查,必要时需要做手术,也叫宫腔镜检查,将粘连分开后在医生指导下给予一定的激素治疗,或者加用中草药、中成药来治疗。",
+    "relation_of_mention": [
+      {
+        "head": {
+          "mention": "宫腔操作后导致内膜变薄、粘连",
+          "start_idx": 61,
+          "end_idx": 75
+        },
+        "relation": 1,
+        "tail": {
+          "type": "mention",
+          "mention": "月经量少",
+          "start_idx": 77,
+          "end_idx": 81
+        }
+      },
+      {
+        "head": {
+          "mention": "40岁之前做人工流产",
+          "start_idx": 48,
+          "end_idx": 58
+        },
+        "relation": 1,
+        "tail": {
+          "type": "mention",
+          "mention": "月经量少",
+          "start_idx": 77,
+          "end_idx": 81
+        }
+      },
+      {
+        "head": {
+          "mention": "女性激素非常好",
+          "start_idx": 97,
+          "end_idx": 104
+        },
+        "relation": 2,
+        "tail": {
+          "type": "relation",
+          "head": {
+            "mention": "宫腔粘连",
+            "start_idx": 124,
+            "end_idx": 128
+          },
+          "relation": 1,
+          "tail": {
+            "mention": "月经量少",
+            "start_idx": 116,
+            "end_idx": 120
+          }
+        }
+      },
+      {
+        "head": {
+          "mention": "卵巢功能衰退",
+          "start_idx": 34,
+          "end_idx": 40
+        },
+        "relation": 1,
+        "tail": {
+          "type": "mention",
+          "mention": "月经量开始慢慢减少",
+          "start_idx": 21,
+          "end_idx": 30
+        }
+      }
+    ]
+  },
+  
+  {
+    "text": "饭后散步是一种非常健康的生活方式,晚饭到睡觉之间的时间比较短暂,且活动量相对于白天来说比较少,食物往往不能被消化,长此以往这会引起多方面问题。首先过多的热量会转化成脂肪,日积月累会造成肥胖,人的血脂会升高。老年人会更容易引起心脑血管疾病,儿童处于生长发育期,过胖会影响骨骼发育,影响内分泌,女性青春期过胖会导致月经失调,同时会加重膝关节承重。饭后散步会增加肠蠕动,促进消化。少食多运动也是人们控制血糖的一种方法,配合降糖药物治疗,效果显著。饭后散步也是缓解精神压力的有效方法,适当锻炼也会改善晚间睡眠,排汗会促进新陈代谢,因此饭后散步对人益处颇多。",
+    "relation_of_mention": [
+      {
+        "head": {
+          "mention": "日积月累",
+          "start_idx": 85,
+          "end_idx": 89
+        },
+        "relation": 2,
+        "tail": {
+          "type": "relation",
+          "head": {
+            "mention": "过多的热量会转化成脂肪",
+            "start_idx": 73,
+            "end_idx": 84
+          },
+          "relation": 1,
+          "tail": {
+            "mention": "肥胖",
+            "start_idx": 92,
+            "end_idx": 94
+          }
+        }
+      },
+      {
+        "head": {
+          "mention": "日积月累",
+          "start_idx": 85,
+          "end_idx": 89
+        },
+        "relation": 2,
+        "tail": {
+          "type": "relation",
+          "head": {
+            "mention": "过多的热量会转化成脂肪",
+            "start_idx": 73,
+            "end_idx": 84
+          },
+          "relation": 1,
+          "tail": {
+            "mention": "血脂会升高",
+            "start_idx": 97,
+            "end_idx": 102
+          }
+        }
+      },
+      {
+        "head": {
+          "mention": "老年人",
+          "start_idx": 103,
+          "end_idx": 106
+        },
+        "relation": 1,
+        "tail": {
+          "type": "mention",
+          "mention": "心脑血管疾病",
+          "start_idx": 112,
+          "end_idx": 118
+        }
+      },
+      {
+        "head": {
+          "mention": "女性青春期过胖",
+          "start_idx": 145,
+          "end_idx": 152
+        },
+        "relation": 1,
+        "tail": {
+          "type": "mention",
+          "mention": "月经失调",
+          "start_idx": 155,
+          "end_idx": 159
+        }
+      },
+      {
+        "head": {
+          "mention": "女性青春期过胖",
+          "start_idx": 145,
+          "end_idx": 152
+        },
+        "relation": 1,
+        "tail": {
+          "type": "mention",
+          "mention": "加重膝关节承重",
+          "start_idx": 163,
+          "end_idx": 170
+        }
+      },
+      {
+        "head": {
+          "mention": "儿童",
+          "start_idx": 119,
+          "end_idx": 121
+        },
+        "relation": 2,
+        "tail": {
+          "type": "relation",
+          "head": {
+            "mention": "过胖",
+            "start_idx": 129,
+            "end_idx": 131
+          },
+          "relation": 1,
+          "tail": {
+            "mention": "影响骨骼发育",
+            "start_idx": 132,
+            "end_idx": 138
+          }
+        }
+      },
+      {
+        "head": {
+          "mention": "儿童",
+          "start_idx": 119,
+          "end_idx": 121
+        },
+        "relation": 2,
+        "tail": {
+          "type": "relation",
+          "head": {
+            "mention": "过胖",
+            "start_idx": 129,
+            "end_idx": 131
+          },
+          "relation": 1,
+          "tail": {
+            "mention": "影响内分泌",
+            "start_idx": 139,
+            "end_idx": 144
+          }
+        }
+      }
+    ]
+  }
+]
