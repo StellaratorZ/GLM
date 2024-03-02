@@ -1,23 +1,31 @@
-This is the repository for our  paper"The More You Say, The Less I Know: Large Language Models Suffers From Statistical Hallucinations in Causality Identifica".
+# Probing Causality Manipulation of Large Language Models ![rocket](https://github.githubassets.com/images/icons/emoji/unicode/1f680.png?v8)
 
-## Install Requirements
+This is the repository for our paper"Probing Causality Manipulation of Large Language Models".
+
+## ![white_check_mark](https://github.githubassets.com/images/icons/emoji/unicode/2705.png?v8) Abstract
+
+ Large language models (LLMs) have shown various ability on natural language processing, including problems about causality. It is not intuitive for LLMs to command causality, since pretrained models usually work on statistical associations, and do not focus on causes and effects in sentences. So that probing internal manipulation of causality is necessary for LLMs. Our work proposes a novel approach to probe causality manipulation hierarchically, by providing different shortcuts to models and observe behaviors. We exploit retrieval augmented generation (RAG) and in-context learning (ICL) to provide shortcuts. We conduct experiments on mainstream LLMs, including GPT-4 and some smaller and domain-specific models. Our results suggest that LLMs can detect entities related to causality and recognize direct causal relationships. However, LLMs lack specialized cognition for causality, merely treating them as part of the global semantic of the sentence. This restricts for further recognition of causality for LLMs.
+
+## ![ledger](https://github.githubassets.com/images/icons/emoji/unicode/1f4d2.png?v8)Install Requirements
+
 This repo mainly requires the following packages.
-* transformers              4.27.1
-* jieba==0.42.1
-* cpm_kernels
-* torch>=1.10
-* gradio
-* mdtex2html
-* sentencepiece
-* accelerate
 
+- transformers==4.27.1
+- jieba==0.42.1
+- cpm_kernels
+- torch>=1.10
+- gradio
+- mdtex2html
+- sentencepiece
+- accelerate
 
 Full packages are listed in requirements.txt.
+
 ```bash
 pip3 install -r requirements.txt
 ```
 
-## Data
+## ![fuelpump](https://github.githubassets.com/images/icons/emoji/unicode/26fd.png?v8) Data
 
 The original dataset CMedCausal was obtained from the CHIP release CBLUE, a medical causal entity relationship extraction dataset. It can be accessed through https://tianchi.aliyun.com/dataset/129573.
 
@@ -34,7 +42,7 @@ We use four approaches to design positive examples with fine causation and negat
 - Action4: We adopt two strategies to form a control group. The first strategy is to randomly disrupt the mentions in the sentences. we collect all the mentions in the dataset and randomly select mentions to fill in the position where the original sentence mentions are located. The second strategy is to randomly disrupt the words in a sentence. For a sentence, we randomly select a number of words in the sentence and randomly disrupt their positions to get a new sentence.
 - Auxiliary_task: Extract the causal pairs that have appeared in the dataset.
 
-## How to Use Our Code
+## ![factory](https://github.githubassets.com/images/icons/emoji/unicode/1f3ed.png?v8) How to Use Our Code
 
 If you have a new dataset with a similar format to  Act_input.json, you can run our code to generate your own causal test dataset.
 
@@ -71,7 +79,7 @@ We provide two official model (`ChatGlm` & `ChatGPT`) for test on dataset,you sh
 
 
 
-## More Questions
+## ![crystal_ball](https://github.githubassets.com/images/icons/emoji/unicode/1f52e.png?v8)More Questions
 
 If you have more questions, please feel free to submit a GitHub issue.
 
